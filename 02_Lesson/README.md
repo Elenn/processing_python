@@ -1,3 +1,7 @@
+
+
+![alt text](https://github.com/Elenn/processing_python/blob/main/02_Lesson/how/lesson_02.png?raw=true)
+
 0. Задание:
 - Создай фигуру, состоящую из 
 rect(), square(), triangle(), circle() or line()
