@@ -1,5 +1,4 @@
 
-
 ![alt text](https://github.com/Elenn/processing_python/blob/main/02_Lesson/how/lesson_02.png?raw=true)
 
 0. Задание:
@@ -32,8 +31,7 @@ def draw():
     fill("#666600")
     triangle(320, 200, 370, 150, 420, 200) 
     
-    square(350, 240, 40) 
-    fill("#666600")
+    square(350, 240, 40)  
     
     fill("#FFFF00")
     circle(10,10,100) 
@@ -56,8 +54,7 @@ def house():
     fill("#666600")
     triangle(320, 200, 370, 150, 420, 200) 
     
-    square(350, 240, 40) 
-    fill("#666600")  
+    square(350, 240, 40)  
     
 def draw():
     background("#FFFFCC")  
@@ -89,8 +86,7 @@ def house(x,y):
     triangle(x, y + 65, x + 50, y + 15, x + 100, 200) 
     
     square(x + 30, y + 105, 40) 
-    fill("#666600") 
-        
+     
     
 def draw():
     background("#FFFFCC")  

@@ -13,8 +13,7 @@ def house(x,y):
     fill("#666600")
     triangle(x, y + 65, x + 50, y + 15, x + 100, 200) 
     
-    square(x + 30, y + 105, 40) 
-    fill("#666600") 
+    square(x + 30, y + 105, 40)  
         
     
 def draw():

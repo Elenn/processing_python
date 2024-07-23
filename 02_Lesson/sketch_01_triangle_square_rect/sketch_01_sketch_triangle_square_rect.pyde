@@ -11,8 +11,7 @@ def draw():
     fill("#666600")
     triangle(320, 200, 370, 150, 420, 200) 
     
-    square(350, 240, 40) 
-    fill("#666600")
+    square(350, 240, 40)
     
     fill("#FFFF00")
     circle(10,10,100)  
