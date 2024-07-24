@@ -1,3 +1,6 @@
+
+![alt text](https://github.com/Elenn/processing_python/blob/main/04_Lesson/how/mousePressed.png?raw=true) 
+
 0. Задание: Написать код, когда при нажатии мышки
 меняется цвет круга на случайный: r = random(0, 255)
 - то есть использовать в fill(255, 100, 200) 
