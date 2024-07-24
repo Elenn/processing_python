@@ -11,8 +11,7 @@ def mousePressed():
     global startMoving
     circleX = mouseX 
     circleY = mouseY
-    startMoving = not startMoving
-    print(startMoving)
+    startMoving = not startMoving 
         
     
 def draw():
