@@ -63,9 +63,20 @@ https://processing.org/reference
 	point() 
 	rect() 
 	square() 
-	triangle()
+	triangle() 
 -----------------------------------------
+6. 
+![alt text](https://github.com/Elenn/processing_python/blob/main/01_Lesson/How/references.png?raw=true)
+![alt text](https://github.com/Elenn/processing_python/blob/main/01_Lesson/How/circleReference.png?raw=true)  
 
+- Для того, что бы посмотреть, какие параметры нужны для каждой фигуры
+- Выдели название фигуры
+- Правая кнопка -> Find in Reference
+- Смотрим параметры Parameters
+- Так для круга
+первый параметр x-coordinate (координата x)
+второй параметр y-coordinate (координата y)
+третий параметр width and height (ширина и длинна)
  
 
  
