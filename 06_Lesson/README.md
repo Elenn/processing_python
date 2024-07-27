@@ -1,3 +1,6 @@
+
+![alt text](https://github.com/Elenn/processing_python/blob/main/06_Lesson/how/listShow.png?raw=true)
+
 0. - Задача: Есть лист, который содержит положительные и отрицательные целые значения
 ```
 myList = [3, -9, 8, 8, -1, 2]
