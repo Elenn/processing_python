@@ -1,4 +1,5 @@
 i = 0 
+x = 100
 
 def setup():  
   global catImageList 
@@ -13,12 +14,15 @@ def setup():
 
 def draw():
    global i
+   global x
    background(255) 
-   image(catImageList[i], 50, 150) 
-   if (frameCount%30==0 and i == (len(catImageList) - 1)): 
-      i = 0
-   elif(frameCount%30==0): 
-      i = i + 1   
+   image(catImageList[i], x, 150) 
+   if(frameCount%30==0):
+      x = x + 10  
+      if (i == (len(catImageList) - 1)): 
+        i = 0 
+      else: 
+        i = i + 1  
       
        
      
