@@ -1,16 +1,82 @@
 
 ![alt text](https://github.com/Elenn/processing_python/blob/main/06_Lesson/how/listShow.png?raw=true)
 
-0. - Задача: Есть лист, который содержит положительные и отрицательные целые значения
+0. - Задача: Есть лист(список), который содержит положительные и отрицательные целые значения
 ```
-myList = [3, -9, 8, 8, -1, 2]
+myList = [3, -9, 8, 54, -1, 2]
 ```
 - Если значение отрицательное, то заменить его на соответствующее положительное значение,
 то есть -3 на 3.
 - Представить в виде набора прямоугольников соответствующей длинны, перед которыми написано значение
 
 ---------------------------------------------------
-1. - Слайдер
+1. Показываем содержимое листа(списка) в виде графика
+```
+def setup():
+  textSize(18) 
+  fill(0)
+  strokeWeight(16)
+  strokeCap(SQUARE)
+  size(640, 360)
+  noLoop()
+
+def draw(): 
+  background(0,255,0,16)
+  myList = [3, -9, 8, 54, -1, 2]
+  y = 100
+  
+  for value in myList: 
+     if value < 0:
+         value = value * -1
+         
+     text(value, 35, y + 6)    
+     line(70, y, value*10 + 70, y)
+     y =  y + 30 
+```
+----------------------------------------------------
+2. Показываем имидж
+```
+bonusImage 
+
+def setup(): 
+  global bonusImage
+  size(640, 360)
+  bonusImage = loadImage("catRight.gif")  
+
+def draw():
+   background(255)
+   image(bonusImage, 50, 150) 
+```
+----------------------------------------------------
+3. - Котенок, который машет лапой
+- Сохраняем несколько имиджей в лист
+- Показываем имиджи один за одним (не на каждом вызове митодо draw, а только на каждом трицатом)
+```
+i = 0 
+
+def setup():  
+  global catImageList 
+  size(640, 360)
+  
+  catImageList = []
+  catRight = loadImage("catRight.gif") 
+  catUp = loadImage("catUp.gif") 
+  
+  catImageList.append(catRight)
+  catImageList.append(catUp)  
+
+def draw():
+   global i
+   background(255) 
+   image(catImageList[i], 50, 150) 
+   if (frameCount%30==0 and i == (len(catImageList) - 1)): 
+      i = 0
+   elif(frameCount%30==0): 
+      i = i + 1 
+```
+
+----------------------------------------------------
+5. - Слайдер
 - Определяем расстояние от положения курсора до линии слайдера:
 - d = dist(mouseX, mouseY, x, height/2)
 - первые два параметра это x,y положения курсора
